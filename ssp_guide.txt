@@ -1,0 +1,43 @@
+KARNATAKA SSP SCHOLARSHIP INFORMATION GUIDE
+
+Portal: https://ssp.postmatric.karnataka.gov.in
+
+Account creation: The referenced Karnataka SSP instructions describe account creation as a one-time process before applying when an account has not already been created
+
+Aadhaar details: The referenced application procedure asks whether the student has Aadhaar and, for the stated process, records Aadhaar number, name as in Aadhaar, gender and CAPTCHA, followed by Aadhaar consent
+
+Parent details: Parent details are entered during the account creation procedure described in the referenced instructions
+
+Contact details: Student email ID and mobile number are provided, and an OTP is used in the referenced account creation procedure
+
+Password requirement: The referenced procedure states a minimum of 8 characters with at least 1 digit for the account password
+
+Student login: After account creation, the student logs in using the login ID, password and CAPTCHA
+
+Scholarship application: The referenced procedure directs the student to select Apply for Post-Matric Scholarship from the student account homepage
+
+10th details: The referenced procedure asks for the applicable 10th-standard board details and related registration/year information
+
+Caste details: The referenced procedure includes religion, caste category, NSP Registration ID and relevant caste/income certificate RD numbers for the stated application process
+
+Personal details: The referenced procedure includes home district, taluk, permanent address, PIN code, distance to college and Karnataka domicile information
+
+College and course details: The referenced procedure includes college district/taluk, university, college, course, course start date, course year, discipline/combination, admission mode and admission year
+
+Hosteller details: The referenced procedure asks whether the student is a hosteller
+
+Previous year result: The referenced procedure asks for previous-year passed/result details according to the student's current course year
+
+E-attestation: Karnataka instructions describe e-attestation of documents for applicable post-matric scholarship students and direct students to take original documents to the concerned e-attestation officer when required
+
+Required documents: Required documents are scheme- and category-dependent; students should keep the documents specified by the applicable SSP scheme and instructions ready
+
+Eligibility: SSP scholarship eligibility is scheme-specific and should be checked against the applicable department notification and current academic-year instructions
+
+Deadline: Application deadlines are scheme- and academic-year-specific and are not fixed in this guide
+
+Official support: For problems, the referenced Karnataka instructions advise students to contact the concerned institution/department and consult the applicable FAQ or official instructions; any helpline number should be verified against the current official notice
+
+Process order: Account creation; Student login; Scholarship application
+
+Scope: This guide is an educational summary based on cited Karnataka government instructions and is not an official eligibility decision or live SSP application-status service
