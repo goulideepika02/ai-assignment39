@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DocuMind AI - Document Assistant</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fc;
+            color: #172554;
+        }
+
+        header {
+            background: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px #00000010;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #475569;
+            margin-left: 25px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .upload-box, .question-section,
+        .evaluation-section {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .upload-box {
+            border: 2px dashed #93b4f5;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        input[type="file"], input[type="text"] {
+            padding: 12px;
+            max-width: 100%;
+            border: 1px solid #cbd5e1;
+            border-radius: 7px;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            padding: 13px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #1e40af;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">DocuMind AI</div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="#upload">Upload Document</a>
+        <a href="#features">Features</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Ask Your Documents <span>Anything</span></h1>
+
+    <p>
+        An AI-Based Document Question Answering System.
+        Upload your documents and get answers from their content.
+    </p>
+</section>
+
+<div class="container">
+
+    <!-- DOCUMENT UPLOAD -->
+
+    <section class="upload-box" id="upload">
+
+        <h2>Upload Your Document</h2>
+
+        <p>Upload PDF, DOCX or TXT files to get started.</p>
+
+        <form action="/upload" method="POST"
+              enctype="multipart/form-data">
+
+            <input type="file" name="document"
+                   accept=".pdf,.docx,.txt" required>
+
+            <br><br>
+
+            <button type="submit">
+                Upload Document
+            </button>
+
+        </form>
+
+    
+<section class="evaluation-section">
+
+    <h2>System Evaluation</h2>
+
+    <p>Check the performance of your Question Answering System.</p>
+
+    <button type="button" onclick="runEvaluation()">
+        Evaluate System
+    </button>
+
+    <div id="evaluation-result" style="margin-top:25px;"></div>
+
+</section>
+
+
+    <!-- QUESTION ANSWERING -->
+
+    <section class="question-section">
+
+        <h2>Ask Your Document Anything</h2>
+
+        <p>Ask questions based on your uploaded document.</p>
+
+        <form action="/ask" method="POST">
+
+            <input
+                type="text"
+                name="question"
+                placeholder="Enter your question here..."
+                required
+            >
+
+            <br><br>
+
+            <button type="submit">
+                Ask Question
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- EVALUATION -->
+
+    
+
+        <h2>System Evaluation</h2>
+
+        <p>Check the performance of your Question Answering System.</p>
+
+        <form action="/evaluate" method="POST">
+
+            <button type="submit">
+                Evaluate System
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- FEATURES -->
+
+    <h2 id="features">Our Features</h2>
+
+    <section class="features">
+
+        <div class="card">
+            <h3>📄 Document Processing</h3>
+            <p>Extract useful information from uploaded documents.</p>
+        </div>
+
+        <div class="card">
+            <h3>📚 Knowledge Base</h3>
+            <p>Organize and store extracted document information.</p>
+        </div>
+
+        <div class="card">
+            <h3>💬 Question Answering</h3>
+            <p>Ask questions and find relevant answers from documents.</p>
+        </div>
+
+        <div class="card">
+            <h3>📊 Evaluation</h3>
+            <p>Evaluate the performance of the system.</p>
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    AI-Based Document Question Answering System | AID201A
+</footer>
+
+<script>
+async function runEvaluation() {
+
+    const result = document.getElementById("evaluation-result");
+
+    result.innerHTML = "Evaluating system...";
+
+    try {
+        const response = await fetch("/evaluate", {
+            method: "POST"
+        });
+
+        const data = await response.text();
+
+        result.innerHTML = data;
+
+    } catch (error) {
+        result.innerHTML = "Error: " + error.message;
+    }
+}
+</script>
+</body>
+
+</body>
+</html>
